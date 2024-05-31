@@ -27,9 +27,11 @@ const Contact = () => {
                 setName('');
                 setEmail('');
                 setMessage('');
+                alert("Envoi effectué !");
             })
             .catch((error) => {
                 console.error('Error sending email:', error);
+                alert("Erreur lors de l'envoi");
             });
     }
 
