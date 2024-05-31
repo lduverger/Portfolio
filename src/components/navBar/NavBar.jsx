@@ -11,6 +11,10 @@ const NavBar = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    }
+
     return (
         <nav>
             <div>
@@ -22,8 +26,8 @@ const NavBar = () => {
             <ul className={isOpen ? 'open' : ''}>
                 {
                     navLinks.map((nav) => (
-                        <li key={nav.id}>
-                            <a href={`#${nav.id}`}>{nav.title}</a>
+                        <li key={nav.id} onClick={closeMenu}>
+                            <a href={`#${nav.id}`}>{nav.title} </a>
                         </li>
                     ))
                 }
