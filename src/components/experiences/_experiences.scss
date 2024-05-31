@@ -1,0 +1,44 @@
+.section-experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon_vertical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    img{
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+}
+
+.date{
+    color: black;
+}
+
+.vertical-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: $primary-color;
+}
+
+.vertical-subtitle{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.vertical-point-container{
+    margin-left: 0.6rem;
+}
+
+.vertical-point{
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,77 @@
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    // box-shadow: 0 4px 8px 0 white;
+    width: 25rem;
+    overflow: hidden;
+    // height: 30rem;
+    color: white;
+    padding: 0.7rem;
+    // background-color: lighten($primary-color, $amount: 10%);
+    background-color: $primary-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        box-shadow: 0 4px 8px 0 darken($color: $primary-color, $amount: 20%);
+        scale: 1.1;
+    }
+
+
+    .project-preview{
+        object-fit: cover;
+        height: 15rem;
+        margin-bottom: 1.2rem;
+        border-radius: 1rem ;
+    }
+
+    .project-title{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-description{
+        margin-bottom: 1rem;
+    }
+
+    .tags-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .project-tag{
+            background-color: darken($primary-color, 15%);
+            padding: 7px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .project-link{
+        
+        flex: 1;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: 0.5rem;
+        
+        img{
+            height: 1.5rem;
+            cursor: pointer;
+        }
+
+        p{
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .projectCard {
+        width: 80%;
+    }
+}
+

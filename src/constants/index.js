@@ -1,11 +1,38 @@
+import {     
+  css,
+  git,
+  html,
+  javascript,
+  nodejs,
+  reactjs,
+  redux,
+  vite,
+  booki,
+  argentBank,
+  kasa,
+  ohmyfood,
+  sophieBluel,
+  cnrs,
+  openclassroom,
+  thales,
+ } from "../assets";
+
 const navLinks = [
   {
     id: "about",
     title: "A propos",
   },
   {
+    id: "skill",
+    title: "Compétences",
+  },
+  {
     id: "work",
-    title: "Experience",
+    title: "Projets",
+  },
+  {
+    id: "experience",
+    title: "Experiences"
   },
   {
     id: "contact",
@@ -16,46 +43,49 @@ const navLinks = [
 const projects = [
   {
     name: "Booki",
-    image: "",
+    image: booki,
     description: "Création d'une page d'accueil pour un site de voyage en utilisant seulement en HTML et CSS, à partir de maquettes Figma. Mise en place de la notion d'interface responsive.",
     tags: [
-
+      "HTML",
+      "CSS",
     ],
     code_link: "https://github.com/lduverger/Booki"
   },
   {
     name: "OhMyFood",
-    image: "",
-    description: "Création d'un site pour répertorier les menus d'un restaurant. Apprentissage du préprocesseur SASS, afin de mieux structurer et optimiser le CSS tout en créant des animations",
+    image: ohmyfood,
+    description: "Création d'un site pour répertorier les menus d'un restaurant. Apprentissage du préprocesseur SASS, afin de mieux structurer et optimiser le CSS tout en créant des animations.",
     tags: [
-      
+      "SASS",
+      "HTML",
     ],
     code_link: "https://github.com/lduverger/ohmyfood"
   },
   {
     name: "Portfolio Sophie Bluel",
-    image: "",
-    description: "Création d'une page web dynamique à partir d'une maquette Figma et en utilisant Javascript. Apprentissage de la communication avec une API",
+    image: sophieBluel,
+    description: "Création d'une page web dynamique à partir d'une maquette Figma et en utilisant Javascript. Communication avec une API.",
     tags: [
-      
+      "JS",
     ],
     code_link: "https://github.com/lduverger/Portfolio-architecte-sophie-bluel"
   },
   {
     name: "Kasa",
-    image: "",
-    description: "Création d'une application de location immobilière en utilisant React. Premier projet avec React à partir d'une maquette Figma.",
+    image: kasa,
+    description: "Création d'une application Front-end de location immobilière en utilisant React. Premier projet avec React à partir d'une maquette Figma.",
     tags: [
-      
+      "React",
     ],
     code_link: "https://github.com/lduverger/Kasa"
   },
   {
     name: "ArgentBank",
-    image: "",
+    image: argentBank,
     description: "Développement Front-end d'une application bancaire en utilisant React et Redux. Il a fallut recréer l'application en React à partir de fichier HTML, mettre en place Redux pour le partage des données entre les composants et mettre une authentification ",
     tags: [
-      
+      "React",
+      "Redux Toolkit",
     ],
     code_link: "https://github.com/lduverger/ArgentBank"
   },
@@ -85,7 +115,7 @@ const technos = [
   {
     name: "Vite",
     icon: vite,
-  }
+  },
   // {
   //   name: "Node JS",
   //   icon: nodejs,
@@ -98,22 +128,39 @@ const technos = [
 
 const experiences = [
   {
-    title: "experience1",
-    company: "Compagny1", 
-    date: "date date",
-    tasks: [
-      "blabla1",
-      "blabla2",
-    ]
+    title: "Etudiant Intégrateur Web",
+    company: "Openclassroom",
+    icon: openclassroom,
+    iconBg: "#383E56",
+    date: "Septembre 2023 - Maintenant",
+    points: [
+      "Apprentissage des bases en développement web (HTML, CSS)",
+      "Apprentissage de JS",
+      "Création d'application avec React",
+    ],
   },
   {
-    title: "experience2",
-    company: "Compagny2", 
-    date: "date2 - date 2",
-    tasks: [
-      "blabla1",
-      "blabla2",
-    ]
+    title: "Ingénieur d'études",
+    company: "CNRS",
+    icon: cnrs,
+    iconBg: "#C5EAE7",
+    date: "Mai 2022 - Mai 2023",
+    points: [
+      "Développement en Java",
+      "Prototype d'agent JADE",
+    ],
+  },
+  {
+    title: "Ingénieur IVVQ",
+    company: "Thales",
+    icon: thales,
+    iconBg: "#E6DEDD",
+    date: "Avril 2018 - Janvier 2022",
+    points: [
+      "Tests fonctionnels",
+      "Gestion des faits techniques",
+      "Rédaction de fiches de tests",
+    ],
   },
 ]
 

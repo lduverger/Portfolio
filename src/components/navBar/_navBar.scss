@@ -1,0 +1,70 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    height: 5rem;
+    
+    img{
+        margin:auto 2rem;
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 50%;
+        height: 3rem;
+    }
+
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        li{
+            margin-right: 1rem;
+            &:hover{
+                font-weight:500;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .menu-toggle {
+            display: block;
+            margin-right: 2rem;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 5rem;
+            right: 0;
+            background-color: $primary-color;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            gap: inherit;
+
+            li {
+                margin: 15px 0;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        ul.open {
+            max-height: 300px; /* Adjust based on the number of menu items */
+        }
+    }
+}

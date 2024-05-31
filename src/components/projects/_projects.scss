@@ -1,0 +1,21 @@
+.section_works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .works-container {
+        width: 100%;
+        gap: 3rem;
+    }
+}

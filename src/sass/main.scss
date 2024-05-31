@@ -1,0 +1,18 @@
+@import 'abstracts/variables';
+
+@import
+'base/reset',
+'base/base';
+
+@import '../components/header/header';
+@import '../components/footer/footer';
+
+@import '../components/navBar/navBar';
+@import '../components/about/about';
+@import '../components/skills/skills';
+@import '../components/projects/projects';
+@import '../components/projectCard/projectCard';
+@import '../components/contact/contact';
+@import '../components/experiences/experiences';
+
+@import '../pages/home'
